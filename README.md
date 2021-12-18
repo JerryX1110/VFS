@@ -176,7 +176,16 @@ Then please unzip and place them according to the file structure above.
 The OTB-100 frames and annotations will be downloaded automatically.
 
 ### GOT-10k
+
+![image](https://user-images.githubusercontent.com/65257938/146650640-eb0eb5d3-f73b-465d-bb1a-5b9025049067.png)
+
+
+![image](https://user-images.githubusercontent.com/65257938/146650617-a8eb5505-a5b4-4838-a0b6-5bbd5abb5ef3.png)
+
+
 repo:https://github.com/got-10k/toolkit
+
+paper:https://arxiv.org/pdf/1810.11981.pdf
 
 GOT-10k dataset could be downloaded from the [official website](http://got-10k.aitestunion.com/downloads).
 
