@@ -62,7 +62,7 @@ cd VFS
 pip install -e .
 ```
 
-We also provide the Dockerfile under `docker/` folder.** (~12.6G)**
+We also provide the Dockerfile under `docker/` folder. (~12.6G)
 
 **The code is developed and tested based on PyTorch 1.6-1.8.  It also runs smoothly with PyTorch 1.9 but the accuracy is slightly worse for OTB evaluation. Please feel free to open a PR if you find the reason.**
 
