@@ -165,6 +165,8 @@ DAVIS2017 dataset could be downloaded from the [official website](https://davisc
 wget https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip
 # download filelist
 wget https://github.com/xvjiarui/VFS/releases/download/v0.1-rc1/davis2017_val_list_rawframes.txt
+# unzip data
+unzip DAVIS-2017-trainval-480p.zip
 ```
 
 Then please unzip and place them according to the file structure above.
@@ -178,6 +180,22 @@ The OTB-100 frames and annotations will be downloaded automatically.
 GOT-10k dataset could be downloaded from the [official website](http://got-10k.aitestunion.com/downloads).
 
 Then please unzip and place them according to the file structure above.
+
+* Links to download full_data.zip (choose the link that works best for you): 
+
+- Baiduyun Disk: https://pan.baidu.com/s/15iXqOEBj99S8-VTpmsLiOg 
+- Google Drive: https://drive.google.com/file/d/1b75MBq7MbDQUc682IoECIekoRim_Ydk1/view?usp=sharing 
+
+* Links to download val_data.zip (choose the link that works best for you): 
+
+- Baiduyun Disk: https://pan.baidu.com/s/1wj9AbST0HC2aCnXjy7aTng
+- Google Drive: https://drive.google.com/file/d/1ZJJZfftL_EEU61TwyHPhLmtZP7nq5QR7/view?usp=sharing
+
+* Links to download test_data.zip (choose the link that works best for you): 
+
+- Baiduyun Disk: https://pan.baidu.com/s/1ygo7CPzNjbhlgjLyl4ANZg 
+- Google Drive: https://drive.google.com/file/d/1Ni7W2r7_nojaQhVNMlya9szknrmKkkRq/view?usp=sharing 
+
 
 ## Run Experiments
 
