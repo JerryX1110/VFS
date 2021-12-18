@@ -17,7 +17,7 @@ The project page with video is at [https://jerryxu.net/VFS/](https://jerryxu.net
 ## UPDATE
 
 ```diff
-- 2021.12.18: Solve some bugs when building the original dockerfile and build a new one.
+- 2021.12.18: Solve some bugs when building the original dockerfile.
 ```
 ---
 
