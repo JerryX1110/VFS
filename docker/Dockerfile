@@ -66,7 +66,9 @@ ENV PATH /opt/conda/bin:$PATH
 RUN export CUDA_HOME="/usr/local/cuda"
 
 # Install pytorch
-RUN conda install pytorch=1.6.0 torchvision cudatoolkit=10.1 -c pytorch
+RUN pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111  -f https://download.pytorch.org/whl/torch_stable.html
+#RUN pip install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch
+#RUN conda install pytorch=1.6.0 torchvision cudatoolkit=10.1 -c pytorch
 RUN pip install simplejson psutil opencv-python tensorboard
 RUN conda install av -c conda-forge
 RUN conda install -c conda-forge moviepy
@@ -77,7 +79,8 @@ RUN conda install -c conda-forge moviepy
 RUN pip install decord==0.4.2
 
 # Install MMCV
-RUN pip install mmcv-full==1.2.1+torch1.6.0+cu101 -f https://openmmlab.oss-accelerate.aliyuncs.com/mmcv/dist/index.html
+#RUN pip install mmcv-full==1.2.1+torch1.6.0+cu101 -f https://openmmlab.oss-accelerate.aliyuncs.com/mmcv/dist/index.html
+RUN pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 # Install Kornia
 #RUN pip install kornia
 RUN pip install git+https://github.com/kornia/kornia
@@ -88,3 +91,12 @@ RUN cd davis2017-evaluation && python setup.py develop
 
 # Install zsh
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -t robbyrussell -p git
+
+# install customized evaluation API for DAVIS
+RUN pip install git+https://github.com/xvjiarui/davis2017-evaluation
+# install evaluation API for OTB
+RUN pip install got10k
+
+# install VFS
+RUN git clone https://github.com/xvjiarui/VFS/
+RUN pip install -e ./VFS/.
