@@ -197,6 +197,22 @@ Then please unzip and place them according to the file structure above.
 - Baiduyun Disk: https://pan.baidu.com/s/1ygo7CPzNjbhlgjLyl4ANZg 
 - Google Drive: https://drive.google.com/file/d/1Ni7W2r7_nojaQhVNMlya9szknrmKkkRq/view?usp=sharing 
 
+```latex
+@article{2021,
+   title={GOT-10k: A Large High-Diversity Benchmark for Generic Object Tracking in the Wild},
+   volume={43},
+   ISSN={1939-3539},
+   url={http://dx.doi.org/10.1109/TPAMI.2019.2957464},
+   DOI={10.1109/tpami.2019.2957464},
+   number={5},
+   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+   publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+   author={Huang, Lianghua and Zhao, Xin and Huang, Kaiqi},
+   year={2021},
+   month={May},
+   pages={1562–1577}
+}
+```
 
 ## Run Experiments
 
