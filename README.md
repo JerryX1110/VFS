@@ -223,6 +223,12 @@ Then please unzip and place them according to the file structure above.
 }
 ```
 
+### JHMDB 
+Please find the split txt file for JHMDB here:<https://github.com/Liusifei/UVC/blob/jhmdb/testlist_split1.txt>.
+The validation list for VIP is VIP_Fine/lists/val_videos.txt from your download data.
+
+
+
 ## Run Experiments
 
 ### Pretrain
@@ -232,6 +238,10 @@ Then please unzip and place them according to the file structure above.
 ```
 
 We use 2 and 8 GPUs for ResNet-18 and ResNet-50 models respectively.
+
+Official: 2 GPUs for ResNet-18 and 8 GPUs for ResNet-50.
+
+On RTX3090, ResNet-50 takes 1 week to train 500 epochs. ResNet-18 takes 2 days to train 100 epochs.
 
 ### Inference
 
@@ -288,6 +298,10 @@ python projects/siamfc-pytorch/train_siamfc.py configs/r18_sgd_cos_100e_r2_1xNx8
 # testing r50 model
 python projects/siamfc-pytorch/train_siamfc.py configs/r50_sgd_cos_100e_r5_1xNx2_k400.py --checkpoint https://github.com/xvjiarui/VFS/releases/download/v0.1-rc1/r50_sgd_cos_100e_r5_1xNx2_k400-b7fb2a38.pth --options out_scale=0.00001 out_channels=2048
 ```
+## Other
+calculate the frame similarity matrix between two video frames
+https://github.com/xvjiarui/VFS/blob/master/mmaction/models/trackers/vanilla_tracker.py#L150
+
 
 ## Acknowledgements
 
